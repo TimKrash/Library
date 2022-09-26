@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Library</h1>
+  </div>
+
+  <div class="content">
+    <button class="add-book">+ Add Book</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <h1>Add New Book</h1>
+          <form action="">
+            <div class="form-entry">
+              <input type="text" id="title" placeholder="Title" name="title" required>
+            </div>
+
+            <div class="form-entry">
+              <input type="text" id="author" name="author" placeholder="Author" required>
+            </div>
+
+            <div class="form-entry">
+              <input type="number" id="pages" name="pages" placeholder="Pages" required>
+            </div>
+
+            <div class="form-entry">
+              <label class="checkbox" for="read">Have you read it?</label> 
+              <input type="checkbox" id="read" name="read">
+            </div>
+
+            <div class="submit-button">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+     </div>
+
+    <div class="card-container">
+    </div>
+  </div>
+
+  <div class="footer">Copyright &copy; Krash</div>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

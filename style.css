@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background-color: #E8E8E8;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+body .header {
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+}
+body .modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding-top: 200px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body .modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+body .modal .modal-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+body .modal .modal-content form .form-entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body .modal .modal-content form .form-entry label {
+  font-family: "Arvo";
+  font-weight: 800;
+  font-size: 18px;
+}
+body .modal .modal-content form .form-entry input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  font-family: "Arvo";
+  font-size: 18px;
+  height: 50px;
+}
+body .modal .modal-content form .form-entry input[type=checkbox] {
+  background-color: #eee;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+body .modal .modal-content form .submit-button {
+  padding-top: 10px;
+}
+body .modal .modal-content form .submit-button button {
+  cursor: pointer;
+  border: none;
+  padding-top: 10px;
+  background-color: lightgreen;
+  padding: 15px;
+  min-width: 200px;
+  border-radius: 10px;
+}
+body .modal .modal-content form .submit-button button:hover {
+  background-color: #81d681;
+}
+body .modal .modal-content form .form-entry:nth-child(1) {
+  margin-top: 10px;
+}
+body .modal .modal-content form .form-entry:last-child {
+  padding-top: 10px;
+  margin-top: 30px;
+}
+body .modal .modal-content .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+body .modal .modal-content .close:hover, body .modal .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .content {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+body .content .add-book {
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+  margin-top: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+body .content .add-book:hover {
+  font-size: 25px;
+  font-weight: 800;
+}
+body .content .card-container {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.2fr));
+}
+body .content .card-container .card {
+  margin: 20px;
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .content .card-container .card .text {
+  font-family: "Arvo";
+}
+body .content .card-container .card .text.title {
+  font-weight: 800;
+  font-size: 25px;
+}
+body .content .card-container .card .text.author {
+  font-style: italic;
+  font-size: 18px;
+}
+body .content .card-container .card .read, body .content .card-container .card .remove {
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+body .content .card-container .card .read.yes, body .content .card-container .card .remove.yes {
+  background-color: lightgreen;
+}
+body .content .card-container .card .read.yes:hover, body .content .card-container .card .remove.yes:hover {
+  background-color: #81d681;
+}
+body .content .card-container .card .read.no, body .content .card-container .card .remove.no {
+  background-color: #FFCCCB;
+}
+body .content .card-container .card .read.no:hover, body .content .card-container .card .remove.no:hover {
+  background-color: #e5b7b6;
+}
+body .content .card-container .card .read {
+  margin-top: 5px;
+}
+body .content .card-container .card .remove {
+  background-color: lightgray;
+}
+body .content .card-container .card .remove:hover {
+  background-color: #bdbdbd;
+}
+body .content .card-container .card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+body .footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */
